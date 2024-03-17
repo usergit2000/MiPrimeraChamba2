@@ -1,47 +1,23 @@
-package com.salvador.miprimerachamba;
+package com.salvador.miprimerachamba
 
-import androidx.appcompat.app.AppCompatActivity;
+import android.os.Bundle
+import android.widget.Button
+import android.widget.EditText
+import android.widget.LinearLayout
+import android.widget.ProgressBar
+import androidx.appcompat.app.AppCompatActivity
 
-import android.annotation.SuppressLint;
-import android.app.DownloadManager;
-import android.app.DownloadManager.Request;
-import android.content.Context;
-import android.content.Intent;
-import android.media.audiofx.EnvironmentalReverb;
-import android.net.Uri;
-import android.os.Bundle;
-import android.os.Environment;
-import android.util.Log;
-import android.util.SparseArray;
-import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.LinearLayout;
-import android.widget.ProgressBar;
-import android.widget.Toast;
-
-import at.huber.youtubeExtractor.VideoMeta;
-import at.huber.youtubeExtractor.YouTubeExtractor;
-import at.huber.youtubeExtractor.YouTubeUriExtractor;
-import at.huber.youtubeExtractor.YtFile;
-
-public class Activity2 extends AppCompatActivity {
-
-    EditText editText;
-    Button btn;
-    String downloadUrl;
-    private static String youtubeLink;
-
-    private LinearLayout mainLayout;
-    private ProgressBar mainProgressBar;
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_2);
-
-        editText = findViewById(R.id.edit_text);
-        btn = findViewById(R.id.button);
+class Activity2 : AppCompatActivity() {
+    var editText: EditText? = null
+    var btn: Button? = null
+    var downloadUrl: String? = null
+    private val mainLayout: LinearLayout? = null
+    private val mainProgressBar: ProgressBar? = null
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_2)
+        editText = findViewById(R.id.edit_text)
+        btn = findViewById(R.id.button)
 
         /*if (savedInstanceState == null && Intent.ACTION_SEND.equals(getIntent().getAction())
                 && getIntent().getType() != null && "text/plain".equals(getIntent().getType())) {
@@ -127,6 +103,9 @@ public class Activity2 extends AppCompatActivity {
             DownloadManager manager = (DownloadManager) getSystemService(Context.DOWNLOAD_SERVICE);
             manager.enqueue(request);
         }*/
+    }
 
+    companion object {
+        private val youtubeLink: String? = null
     }
 }

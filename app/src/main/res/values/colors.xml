@@ -2,4 +2,9 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="background_app">#100425</color>
+    <color name="background_component_selected">#130330</color>
+    <color name="background_component">#180043</color>
+    <color name="background_button">#EF0505</color>
+    <color name="title_text">#E0DEE4</color>
 </resources>
