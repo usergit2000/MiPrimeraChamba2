@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/background_app"
     android:paddingHorizontal="16dp"
-    android:paddingVertical="32dp"
+    android:paddingVertical="60dp"
     tools:context=".MainActivity">
 
     <androidx.cardview.widget.CardView
@@ -42,6 +42,27 @@
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tvEnlaceSifods"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enlace"
+        android:textAllCaps="true"
+        android:layout_marginStart="80dp"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@+id/viewSifods" />
+
+    <TextView
+        android:id="@+id/tvEnlacePeruEduca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enlace"
+        android:textSize="12sp"
+        android:layout_marginStart="210dp"
+        app:layout_constraintStart_toEndOf="@+id/tvEnlaceSifods"
+        android:textAllCaps="true"
+        app:layout_constraintTop_toBottomOf="@id/viewPeruEduca"
 
     <androidx.cardview.widget.CardView
         android:id="@+id/viewPeruEduca"
@@ -80,33 +101,14 @@
         android:id="@+id/viewSisdore"
         android:layout_width="0dp"
         android:layout_height="120dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="16dp"
-        android:paddingBottom="18dp"
         app:cardBackgroundColor="@color/background_component_selected"
         app:cardCornerRadius="18dp"
         app:layout_constraintEnd_toStartOf="@+id/viewAyni"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/viewSifods">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <ImageView
-                android:layout_width="150dp"
-                android:layout_height="60dp"
-                android:layout_marginBottom="8dp"
-                android:src="@drawable/img_peruEduca" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/sisdore"
-                android:textAllCaps="true"
-                android:textColor="@color/title_text" />
-        </LinearLayout>
 
     </androidx.cardview.widget.CardView>
 
@@ -114,33 +116,42 @@
         android:id="@+id/viewAyni"
         android:layout_width="0dp"
         android:layout_height="120dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginTop="40dp"
         android:paddingBottom="18dp"
         app:cardBackgroundColor="@color/background_component_selected"
         app:cardCornerRadius="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/viewSisdore"
+        app:layout_constraintTop_toBottomOf="@+id/viewPeruEduca">
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/viewGradosyTitulos"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="16dp"
+        app:cardBackgroundColor="@color/background_component_selected"
+        app:cardCornerRadius="18dp"
+        app:layout_constraintEnd_toStartOf="@+id/viewSiagie"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/viewSifods">
+        app:layout_constraintTop_toBottomOf="@+id/viewSisdore">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:orientation="vertical">
 
-            <ImageView
-                android:layout_width="150dp"
-                android:layout_height="60dp"
-                android:layout_marginBottom="8dp"
-                android:src="@drawable/img_peruEduca" />
+    </androidx.cardview.widget.CardView>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/ayni"
-                android:textAllCaps="true"
-                android:textColor="@color/title_text" />
-        </LinearLayout>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/viewSiagie"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="40dp"
+        android:paddingBottom="18dp"
+        app:cardBackgroundColor="@color/background_component_selected"
+        app:cardCornerRadius="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/viewGradosyTitulos"
+        app:layout_constraintTop_toBottomOf="@+id/viewAyni">
 
     </androidx.cardview.widget.CardView>
 
