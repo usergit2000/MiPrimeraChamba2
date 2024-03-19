@@ -4,12 +4,13 @@
     <string name="perueduca">PeruEduca</string>
     <string name="sisdore">Sisdore</string>
     <string name="ayni">Ayni</string>
-    <string name="sisdore">Sisdore</string>
-    <string name="ayni">Ayni</string>
+    <string name="siagie">Siagie</string>
+    <string name="materialPedagogico">Material Pedagogico</string>
     <string name="enlace">Enlace</string>
+    <string name="redes">Nuestras Redes Sociales</string>
     <string name="gradosYtitulos">Grados y Titulos</string>
     <string name="link">
-        Para mayor informacion presione <a href="https://chat.whatsapp.com/JKEwYVRxKstHqOr3u2q8uN">aqui</a>
+        Para unirse al grupo presione <a href="https://chat.whatsapp.com/JKEwYVRxKstHqOr3u2q8uN">aqui</a>
     </string>
     <string name="error_no_yt_link">Not a valid YouTube link!</string>
 </resources>

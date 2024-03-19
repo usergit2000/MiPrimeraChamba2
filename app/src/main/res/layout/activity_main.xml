@@ -37,6 +37,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/sifods"
                 android:textAllCaps="true"
+                android:textStyle="bold"
                 android:textColor="@color/title_text" />
 
 
@@ -47,9 +48,9 @@
         android:id="@+id/tvEnlaceSifods"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
         android:text="@string/enlace"
         android:textAllCaps="true"
-        android:layout_marginStart="80dp"
         android:textSize="12sp"
         app:layout_constraintTop_toBottomOf="@+id/viewSifods" />
 
@@ -57,12 +58,12 @@
         android:id="@+id/tvEnlacePeruEduca"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/enlace"
-        android:textSize="12sp"
         android:layout_marginStart="210dp"
-        app:layout_constraintStart_toEndOf="@+id/tvEnlaceSifods"
+        android:text="@string/enlace"
         android:textAllCaps="true"
-        app:layout_constraintTop_toBottomOf="@id/viewPeruEduca"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/tvEnlaceSifods"
+        app:layout_constraintTop_toBottomOf="@id/viewPeruEduca"/>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/viewPeruEduca"
@@ -90,6 +91,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/perueduca"
+                android:textStyle="bold"
                 android:textAllCaps="true"
                 android:textColor="@color/title_text" />
         </LinearLayout>
@@ -109,6 +111,26 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/viewSifods">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="70dp"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/Sisdore" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sisdore"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:textColor="@color/title_text" />
+        </LinearLayout>
 
     </androidx.cardview.widget.CardView>
 
@@ -124,6 +146,26 @@
         app:layout_constraintStart_toEndOf="@+id/viewSisdore"
         app:layout_constraintTop_toBottomOf="@+id/viewPeruEduca">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="70dp"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/ayni" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ayni"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:textColor="@color/title_text" />
+        </LinearLayout>
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
@@ -138,7 +180,26 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/viewSisdore">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
 
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="70dp"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/grados" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gradosYtitulos"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:textColor="@color/title_text" />
+        </LinearLayout>
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
@@ -153,18 +214,62 @@
         app:layout_constraintStart_toEndOf="@+id/viewGradosyTitulos"
         app:layout_constraintTop_toBottomOf="@+id/viewAyni">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="70dp"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/siagie" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/siagie"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:textColor="@color/title_text" />
+        </LinearLayout>
     </androidx.cardview.widget.CardView>
 
-
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:text="@string/link"
-        android:textColor="@color/white"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/viewMaterialDescargable"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="16dp"
+        app:cardBackgroundColor="@color/background_component_selected"
+        app:cardCornerRadius="18dp"
+        app:layout_constraintEnd_toStartOf="@id/viewSiagie"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="642dp" />
+        app:layout_constraintTop_toBottomOf="@+id/viewGradosyTitulos">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="70dp"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/pedagogico" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/materialPedagogico"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:textColor="@color/title_text" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
 
     <Button
         android:id="@+id/btnDescarga"
