@@ -23,14 +23,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        siguiente = findViewById<View>(R.id.btnDescarga) as Button
-        siguiente!!.setOnClickListener {
-            val i = Intent(this@MainActivity, Activity2::class.java)
-            startActivity(i)
-        }
-        val textView = findViewById<TextView>(R.id.textView6)
-        textView.movementMethod = LinkMovementMethod.getInstance()
-        val imageView = findViewById<ImageView>(R.id.imageView4)
+
+        val imageView = findViewById<ImageView>(R.id.viewSifods)
         imageView.setOnClickListener { // URL a la que deseas redirigir
             val url = "https://sifods.minedu.gob.pe/consulta-linea"
 
@@ -40,7 +34,7 @@ class MainActivity : AppCompatActivity() {
             // Iniciar la actividad del navegador
             startActivity(intent)
         }
-        val imageView1 = findViewById<ImageView>(R.id.imageView3)
+        val imageView1 = findViewById<ImageView>(R.id.viewPeruEduca)
         imageView1.setOnClickListener { // URL a la que deseas redirigir
             val url = "https://constancias.perueduca.pe/#/inicio"
 
@@ -51,7 +45,7 @@ class MainActivity : AppCompatActivity() {
             // Iniciar la actividad del navegador
             startActivity(intent)
         }
-        val imageView2 = findViewById<ImageView>(R.id.imageView)
+        val imageView2 = findViewById<ImageView>(R.id.viewAyni)
         imageView2.setOnClickListener { // URL a la que deseas redirigir
             val url = "https://passport4seguridad.minedu.gob.pe/iniciarSesion?" +
                     "param=eyJDT0RJR09fU0lTVEVNQSI6IjAwMTMzOSIsIlVSTF9SRVRPUk5PIjoiaHR0cHM6Ly9zZXJ2aWNpb3MtY" +
@@ -62,7 +56,7 @@ class MainActivity : AppCompatActivity() {
             // Iniciar la actividad del navegador
             startActivity(intent)
         }
-        val imageView3 = findViewById<ImageView>(R.id.imageView2)
+        val imageView3 = findViewById<ImageView>(R.id.viewSisdore)
         imageView3.setOnClickListener { // URL a la que deseas redirigir
             val url = "http://sisdore.regionjunin.gob.pe:8080/sisdore/pages/Inicio.jsf"
             // Crear un Intent para abrir la URL en el navegador
@@ -71,7 +65,16 @@ class MainActivity : AppCompatActivity() {
             // Iniciar la actividad del navegador
             startActivity(intent)
         }
-        val imageView4 = findViewById<ImageView>(R.id.imageView5)
+        val imageView4 = findViewById<ImageView>(R.id.viewGradosyTitulos)
+        imageView4.setOnClickListener { // URL a la que deseas redirigir
+            val url = "https://titulosinstitutos.minedu.gob.pe/"
+            // Crear un Intent para abrir la URL en el navegador
+            val intent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
+
+            // Iniciar la actividad del navegador
+            startActivity(intent)
+        }
+        val imageView5 = findViewById<ImageView>(R.id.viewSiagie)
         imageView4.setOnClickListener { // URL a la que deseas redirigir
             val url = "https://titulosinstitutos.minedu.gob.pe/"
             // Crear un Intent para abrir la URL en el navegador
@@ -87,7 +90,7 @@ class MainActivity : AppCompatActivity() {
         viewPeruEduca = findViewById(R.id.viewPeruEduca)
     }
 
-    private fun initListeners(){
+    private fun initListeners() {
 
     }
 

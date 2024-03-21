@@ -14,9 +14,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MiPrimeraChamba"
         tools:targetApi="31">
-        <activity
-            android:name=".Activity2"
-            android:exported="false" />
+<!--        <activity-->
+<!--            android:name=".Activity2"-->
+<!--            android:exported="false" />-->
 
         <activity
             android:name=".MainActivity"
